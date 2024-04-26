@@ -141,7 +141,7 @@ new Vue({
       number: 1,
       tempNumber: 0,
       // 抽奖人数
-      numberPeople: undefined,
+      numberPeople: 1,
       // 抽奖状态
       isLuckyDraw: false,
       // 滚动名单
@@ -278,7 +278,7 @@ new Vue({
         } else {
           this.removeMonitorMouseScrolling()
           this.isLuckyDraw = false
-          this.numberPeople = undefined
+//          this.numberPeople = undefined
           this.number += 1
           stopAnimate('grid')
         }
